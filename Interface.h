@@ -21,5 +21,6 @@ public:
 	Gender getGender();
 	Race getRace();
 	HogwartsHouse getHouse();
+	ArcanistArt getArcanistArt();
 	int getPlayerChoice();
 };

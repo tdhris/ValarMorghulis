@@ -10,20 +10,10 @@ protected:
 	protected:
 	std::string getStoryBeginning();
 	Choice* getChoiceOne();
-	Choice* getChoiceTwo();
 	Choice* getChoiceOneOne();
 	Choice* getChoiceOneTwo();
-	Choice* getChoiceOneThree();
-	Choice* getChoiceOneOneOne();
-	Choice* getChoiceOneOneTwo();
-	Choice* getChoiceOneOneOneOne();
-	Choice* getChoiceOneOneOneTwo();
-	Choice* getChoiceOneTwoOne();
-	Choice* getChoiceOneTwoTwo();
-	Choice* getChoiceOneTwoOneOne();
-	Choice* getChoiceOneTwoOneTwo();
-	Choice* getChoiceOneThreeOne();
-	Choice* getChoiceOneThreeTwo();
+	Choice* getChoiceTwo();
+
 public:
 	HobbitStoryline(Character* hero) : Storyline(hero) {}
 };

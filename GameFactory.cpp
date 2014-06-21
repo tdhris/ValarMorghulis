@@ -39,9 +39,10 @@ Character* GameFactory::createCharacter()
 	else if (characterRace == Race::Hobbit)
 		return new Hobbit(characterName, characterGender);
 	
-	else
+	else if (characterRace == Race::Arcanist)
 	{
-		return new Arcanist(characterName, characterGender);
+		ArcanistArt art = interface->getArcanistArt();
+		return new Arcanist(characterName, characterGender, art);
 	}
 }
 

@@ -77,6 +77,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AllMenMustDie.cpp" />
+    <ClCompile Include="ArcanistStoryline.cpp" />
     <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameFactory.cpp" />
@@ -89,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arcanist.h" />
+    <ClInclude Include="ArcanistStoryline.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="Choice.h" />
     <ClInclude Include="FileReader.h" />

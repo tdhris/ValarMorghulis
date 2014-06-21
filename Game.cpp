@@ -6,6 +6,7 @@
 #include "Storyline.h"
 #include "WizardStoryline.h"
 #include "HobbitStoryline.h"
+#include "ArcanistStoryline.h"
 
 
 Game::Game(Character* hero)
@@ -55,6 +56,11 @@ Situation* Game::initialize()
 	else if (this->hero->getRace() == Race::Hobbit)
 	{
 		storyline = new HobbitStoryline(this->hero);
+	}
+
+	else if (this->hero->getRace() == Race::Arcanist)
+	{
+		storyline = new ArcanistStoryline(this->hero);
 	}
 
 	return storyline->getStoryline();

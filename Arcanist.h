@@ -5,16 +5,27 @@
 #include "Character.h"
 
 
+enum class ArcanistArt
+{
+	Naming,
+	Sympathy,
+	Artificery,
+	Alchemy
+};
+
 class Arcanist : public Character
 {
+private:
+	ArcanistArt art;
 public:
-	Arcanist (std::string name, Gender gender) : Character(name, gender)
+	Arcanist (std::string name, Gender gender, ArcanistArt art) : Character(name, gender)
 	{
+		this->art = art;
 	}
 
 	std::string getNickname() const
 	{
-		return "";
+		return "Arcanist " + this->name;
 	}
 
 	Race getRace() const

@@ -89,7 +89,6 @@ Race Interface::getRace()
 	displayText("1. Wizard ('Harry Potter')");
 	displayText("2. Hobbit ('Lord of the Rings')");
 	displayText("3. Arcanist ('Kingkiller Chronicles')");
-	displayText("4. Aes Sedai ('the Wheel of Time')");
 	displayText("\nCharacter Race> ");
 	
 	char k = getch();
@@ -103,9 +102,6 @@ Race Interface::getRace()
 		break;
 	case '3':
 		race = Race::Arcanist;
-		break;
-	case '4':
-		race = Race::AesSedai;
 		break;
 	default:
 		race = Race::Wizard;
@@ -146,6 +142,38 @@ HogwartsHouse Interface::getHouse()
 	return house;
 }
 
+
+ArcanistArt Interface::getArcanistArt()
+{
+		ArcanistArt art;
+
+		displayText("the University stands out due to its instruction in the following disciplines:");
+		displayText("1. Sympathy - requires a user to create a sympathetic link between two objects. What is done to one object will affect the other.");
+		displayText("2. Artificery - involves standard engineering and the application of runes (known as sygaldry ). These can mimic the effects of sympathy to create items with special properties.");
+		displayText("3. Alchemy - Chemistry is nothing like Alchemy!");
+		displayText("4. Naming - by perceiving the thing's true nature the Namer can control it.");
+		displayText("Choose an Arcanist Art In Which Your Character Specializes > ");
+
+		char k = getch();
+		switch(k)
+		{
+		case '1':
+			art = ArcanistArt::Sympathy;
+			break;
+		case '2':
+			art = ArcanistArt::Artificery;
+			break;
+		case '3':
+			art = ArcanistArt::Alchemy;
+			break;
+		case '4':
+			art = ArcanistArt::Naming;
+			break;
+		default:
+			art = ArcanistArt::Sympathy;
+		}
+		return art;
+}
 
 int Interface::getPlayerChoice()
 {

@@ -14,7 +14,6 @@ enum class Race
 	Wizard,
 	Hobbit,
 	Arcanist,
-	AesSedai,
 };
 
 class Character
